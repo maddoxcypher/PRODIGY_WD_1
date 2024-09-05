@@ -200,4 +200,14 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Thank you for your message! We will get back to you soon.');
         contactForm.reset();
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    });
 });
